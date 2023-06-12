@@ -11,7 +11,7 @@ export const StyledHeader = styled.header`
     }
   `
 export const StyledDivHeader = styled.div`
-    width: 70%;
+    width: 65%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,7 +38,6 @@ export const StyledDivHeader = styled.div`
         margin-right: 1rem;
         display: flex;
         cursor: pointer;
-
     }
     span>p{
         background-color: var(--color-color-primary);
@@ -66,7 +65,7 @@ export const StyledDivHeader = styled.div`
 `
 
 export const StyledFormHeader = styled.form`
-    width: 30%;
+    width: 35%;
     background-color: var(--color-grey-000);
     padding: 0.5rem;
 
@@ -75,7 +74,7 @@ export const StyledFormHeader = styled.form`
     }
 
     div{
-        width: 75%;
+        width: 60%;
         height: 3.75rem;
         display: flex;
         align-items: center;

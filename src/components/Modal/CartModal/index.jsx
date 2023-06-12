@@ -13,6 +13,7 @@ export function CartModal({productsCart, setProductsCart}){
     localStorage.setItem('productsCart', JSON.stringify(updatedList))
   }
 
+    
     return(
         <>
         {productsCart.map((product, index) => (
@@ -22,7 +23,7 @@ export function CartModal({productsCart, setProductsCart}){
                 <Title_1>{product.name}</Title_1>
             </StyledLidiv>
             <StyledImg  src={lixeira} alt="Desenho de uma lixeira da cor cinza" onClick={(event) => DeleteProduc(event, product)} />
-          </StyledLiModal>
+          </StyledLiModal>       
         ))}
       </>
     )

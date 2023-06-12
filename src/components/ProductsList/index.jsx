@@ -30,27 +30,27 @@ export function ProductsList({productsCart, setProductsCart, listLength, totalPr
     return(
         <>
             <Header  
-            setInputSearch={setInputSearch}
-            setIsModalOpen={setIsModalOpen}
-            listLength={listLength}
+            setInputSearch={ setInputSearch }
+            setIsModalOpen={ setIsModalOpen }
+            listLength={ listLength }
              />
             {
             isModalOpen ? 
             <Modal 
-            setIsModalOpen={setIsModalOpen}
-            productsCart={productsCart}
-            setProductsCart={setProductsCart}
-            totalPrice={totalPrice}
+            setIsModalOpen={ setIsModalOpen }
+            productsCart={ productsCart }
+            setProductsCart={ setProductsCart }
+            totalPrice={ totalPrice }
             /> : null
             }
             <StyledProducList>
                 {
                 filterProducts.map((product) => 
                 <Product 
-                setIsModalOpen={setIsModalOpen}
-                productsCart={productsCart}
-                setProductsCart={setProductsCart}
-                key={product.id}
+                setIsModalOpen={ setIsModalOpen }
+                productsCart={ productsCart }
+                setProductsCart={ setProductsCart }
+                key={ product.id }
                 {... product}/>)
                 }
             </StyledProducList>
